@@ -22,5 +22,22 @@ class ItemServiceTest extends TestBase
 
         $this->assertEquals('This is the real title', $item->getTitle());
     }
-    
+
+    // public function test_all_data_is_stored_on_items_rawdata_property()
+    // {
+    //     $item = new Item();
+        
+    //     $expectData = json_encode([
+    //         'title' => 'some title',
+    //         'ID' => 1424354,
+    //         'status' => 'some status',
+    //         'images' => [
+    //             ['name' => 'image-name', 'size' => 5000, 'url'=>'http://somecat.com'],
+    //             ['name' => 'image-name', 'size' => 5000, 'url'=>'http://somecat.com'],
+    //         ],
+    //     ]);
+
+    //     $this->assertEquals($expectData, $item->getRawData());
+    // }
+
 }

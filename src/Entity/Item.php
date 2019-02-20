@@ -60,14 +60,14 @@ class Item
         return $this;
     }
 
-    public function getRawData(): ?string
+    public function getRawData(): ?array
     {
-        return $this->rawData;
+        return json_decode($this->rawData, true);
     }
 
-    public function setRawData(?string $rawData): self
+    public function setRawData(array $rawData): self
     {
-        $this->rawData = $rawData;
+        $this->rawData = json_encode($rawData);
 
         return $this;
     }
