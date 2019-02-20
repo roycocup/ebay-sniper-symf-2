@@ -1,11 +1,12 @@
 
 Todo:
   ☐ Insert url and get real info from ebay on that item
-    ☐ call a service
-    ☐ expect no network issues
-    ☐ wait for response
-    ☐ collect the populated entity
-    ☐ this needs to be an asyncronous method so we need to have this 
+    ✔ call a service @done (20/02/2019, 12:57:54)
+      service needs to make a call to external:
+        ☐ handle network issues
+        ☐ asyncronous wait for response
+    ☐ populate response directly into the object raw data
+    ☐ let the item populate itself from the raw data
   ☐ bid on an item and have the bid persisted
 
 

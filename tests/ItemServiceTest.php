@@ -22,4 +22,5 @@ class ItemServiceTest extends TestBase
 
         $this->assertEquals('This is the real title', $item->getTitle());
     }
+    
 }
