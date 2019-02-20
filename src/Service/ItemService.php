@@ -17,7 +17,8 @@ class ItemService
     public function populate(): Item
     {
         $data = $this->connection->getData();
-        $this->item->setTitle($data);
+        $this->item->setTitle($data['title']);
+        $this->item->setRawData($data);
 
         return $this->item;
     }
