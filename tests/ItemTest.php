@@ -3,6 +3,7 @@
 namespace App\Tests;
 
 use App\Entity\Item;
+use App\Service\ItemService;
 
 class ItemTest extends TestBase
 {
@@ -16,6 +17,4 @@ class ItemTest extends TestBase
     {
         $this->assertClassHasAttribute('title', Item::class);
     }
-
-    
 }

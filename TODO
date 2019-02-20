@@ -1,7 +1,14 @@
 
 Todo:
   ☐ Insert url and get real info from ebay on that item
-  
+    ☐ call a service
+    ☐ expect no network issues
+    ☐ wait for response
+    ☐ collect the populated entity
+    ☐ this needs to be an asyncronous method so we need to have this 
+  ☐ bid on an item and have the bid persisted
+
+
   Must have:
     ☐ Bidding system
     ☐ Time remaining
@@ -9,5 +16,6 @@ Todo:
     ☐ Homepage
     ☐ User profile
     ☐ User history
+    ☐ Notification system
 
   
