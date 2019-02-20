@@ -2,11 +2,11 @@
 Todo:
   ☐ Insert url and get real info from ebay on that item
     ✔ call a service @done (20/02/2019, 12:57:54)
-      service needs to make a call to external:
-        ☐ handle network issues
-        ☐ asyncronous wait for response
-    ☐ populate response directly into the object raw data
-    ☐ let the item populate itself from the raw data
+    ✔ populate response directly into the object raw data @done (20/02/2019, 13:32:22)
+    service makes call to ebay api:
+      ☐ get a response and store in item rawData
+      ☐ handle network issues
+      ☐ asyncronous wait for response
   ☐ bid on an item and have the bid persisted
 
 

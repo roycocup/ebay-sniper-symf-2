@@ -38,4 +38,5 @@ class ItemTest extends TestBase
 
         $this->assertEquals($expectData, $item->getRawData());
     }
+
 }
