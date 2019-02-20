@@ -6,7 +6,10 @@ use App\Entity\{IConnection, Item};
 
 class ItemService 
 {
-    protected $item, $connection;
+    private $item; 
+    private $connection;
+
+    protected $data;  
 
     public function __construct(Item $item, IConnection $connection)
     {
@@ -14,11 +17,16 @@ class ItemService
         $this->connection = $connection;
     }
 
+    private function populateInternalData()
+    {
+        $this->data = $this->connection->getData();
+    }
+
     public function populate(): Item
     {
-        $data = $this->connection->getData();
-        $this->item->setTitle($data['title']);
-        $this->item->setRawData($data);
+        $this->populateInternalData();
+        $this->item->setTitle($this->data['title']);
+        $this->item->setRawData($this->data);
 
         return $this->item;
     }
