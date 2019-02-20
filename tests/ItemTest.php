@@ -17,4 +17,9 @@ class ItemTest extends TestBase
     {
         $this->assertClassHasAttribute('title', Item::class);
     }
+
+    public function test_item_has_raw_information_from_ebay()
+    {
+        $this->assertClassHasAttribute('rawData', Item::class);
+    }
 }

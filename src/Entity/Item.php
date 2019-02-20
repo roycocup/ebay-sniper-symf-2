@@ -26,6 +26,11 @@ class Item
      */
     private $title;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $rawData; 
+
     public function getId(): ?int
     {
         return $this->id;
@@ -51,6 +56,18 @@ class Item
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getRawData(): ?string
+    {
+        return $this->rawData;
+    }
+
+    public function setRawData(?string $rawData): self
+    {
+        $this->rawData = $rawData;
 
         return $this;
     }
