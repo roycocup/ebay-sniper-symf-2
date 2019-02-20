@@ -10,13 +10,12 @@ class EbayConnectionTest extends WebTestCase
 {
     public function test_service_makes_actual_request_to_ebay()
     {
-        $this->markTestIncomplete();
         // make a request to sandbox
-        $item = new Item();
-        $item->setUrl('https://ebay.com/test/');
-        $itemService = new ItemService($item, new EbayService());
-        $itemService->populate();
+        $ebay = new EbayService();
+        $ebay->url = 'https://ebay.com/test/';
 
-        $this->assertNotNull($item->getRawData());
+        $data = $ebay->getData();
+
+        $this->assertNotNull($data);
     }
 }
