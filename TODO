@@ -1,14 +1,13 @@
 
 Todo:
-  Stories:
-    ☐ A user should be able to insert an url for an ebay item in ordetr to get the information regarding that item
-
+  ☐ Insert url and get real info from ebay on that item
+  
   Must have:
-    Bidding system:
-    Time remaining:
-    Login system:
-    Homepage:
-    User:
-      ☐ User history
+    ☐ Bidding system
+    ☐ Time remaining
+    ☐ Login system
+    ☐ Homepage
+    ☐ User profile
+    ☐ User history
 
   
